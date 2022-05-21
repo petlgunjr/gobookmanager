@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/gorilla/mux"
-	_ "github.com/jinhzu/gorm/dialects/mysql"
-	"github.com/petlgunjr/gobookmanager/pkg/routes"
 	"log"
 	"net/http"
+
+	"github.com/gorilla/mux"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/petlgunjr/gobookmanager/pkg/routes"
 )
 
 func main() {
