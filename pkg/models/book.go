@@ -5,10 +5,12 @@ import (
 	"github.com/petlgunjr/gobookmanager/pkg/config"
 )
 
-var db *gorm.DB
+var (
+	db *gorm.DB
+)
 
 type Book struct {
-	gorm.model
+	gorm.Model
 	Name        string `json:"name"`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
